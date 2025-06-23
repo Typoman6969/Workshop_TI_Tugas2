@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portofolio Saya</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        nav {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ddd;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .home {
+            text-align: center;
+            padding-top: 150px;
+            min-height: 100vh;
+        }
+
+        .home h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .home p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        .projects {
+            background: white;
+        }
+
+        .projects h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .project-card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .project-card h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .project-card p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+       .contact {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            margin-top: 80px; 
+        }
+
+
+        .contact h2 {
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+            justify-items: center;
+        }
+
+        .contact-item {
+            background: #34495e;
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .contact-item h3 {
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .contact-item p {
+            color: #ccc;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            .home h1 {
+                font-size: 2rem;
+            }
+
+            .home p {
+                font-size: 1rem;
+            }
+
+            section {
+                padding: 40px 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .home h1,
+            .projects h2,
+            .contact h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projek</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <section class="home" id="home">
+        <h1>Selamat Datang</h1>
+        <p>Perkenalkan, saya sedang belajar membuat website dan ini adalah proyek portofolio pertama saya.</p>
+        <p>Website ini dibuat sebagai bagian dari proses belajar saya di dunia pengembangan web.</p>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>Projek Saya</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Website Company Profile</h3>
+                <p>Saya membuat website profil perusahaan dengan desain yang responsif, modern, dan juga sederhana yang mana website ini nantinya menampilkan informasi lengkap tentang perusahaan dan layanan di dalam web nya.</p>
+                <p><strong>Teknologi:</strong> HTML, CSS, JavaScript</p>
+            </div>
+            <div class="project-card">
+                <h3>Aplikasi To-Do List</h3>
+                <p>Aplikasi yang saya buat ini sederhana yang mana untuk mengelola daftar tugas harian. Fitur yang ter include adalah menambah, menghapus, dan menandai tugas yang sudah selesai.</p>
+                <p><strong>Teknologi:</strong> HTML, CSS, JavaScript</p>
+            </div>
+            <div class="project-card">
+                <h3>Landing Page Produk</h3>
+                <p>Desain landing page yang saya buat sederhana dan akan menarik untuk promosi produk dengan fokus pada konversi dan user experience yang baik.</p>
+                <p><strong>Teknologi:</strong> HTML, CSS</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Kontak Saya</h2>
+        <p>Tertarik untuk bekerja sama? Hubungi saya melalui kontak di bawah ini.</p>
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3>Email</h3>
+                <p>
+                    <a href="mailto:gathanalfaraldy@gmail.com" target="_blank" style="color: #ccc; text-decoration: none;">
+                        gathanalfaraldy@gmail.com
+                    </a>
+                </p>
+            </div>
+            <div class="contact-item">
+                <h3>WhatsApp</h3>
+                <p>
+                    <a href="https://wa.me/6285186894708" target="_blank" style="color: #ccc; text-decoration: none;">
+                        +62 851-8689-4708
+                    </a>
+                </p>
+            </div>
+            <div class="contact-item">
+                <h3>GitHub</h3>
+                <p>
+                    <a href="https://github.com/Typoman6969" target="_blank" style="color: #ccc; text-decoration: none;">
+                        Typoman6969
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling untuk navigasi
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
